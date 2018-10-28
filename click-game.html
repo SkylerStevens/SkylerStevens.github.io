@@ -1,0 +1,74 @@
+<html>
+<div>
+<link href="https://fonts.googleapis.com/css?family=Lobster"
+rel="stylesheet"
+type="text/css">
+</div>
+
+<style>
+:root {
+  background-color: black;
+}
+  #num {
+    color: white;
+    font-size: 100px;
+    font-family: Helvetica;
+    text-align: center;
+    margin:auto;
+    border-radius: 1%;
+    width: 30%;
+    margin-top: 15%;
+
+  }
+  #butt {
+    display: block;
+    background-color: white;
+    outline: none;
+    font-size: 15px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    padding: 10px 15px 10px 15px;
+    border-radius: 5%;
+    margin: auto;
+    margin-top: 50px;
+    font-family: Helvetica;
+  }
+
+
+  }
+</style>
+
+<div id="num" type="number"> 0 </div>
+
+<div>
+<button id="butt"> Click </button>
+</div>
+
+
+<script>
+var num = document.getElementById("num");
+var count = 0;
+
+butt.onclick = function() {
+count += 1;
+num.innerHTML = count;
+}
+
+butt.onclick = function() {
+  count = random() * 50;
+  num.innterHTML = count;
+}
+
+function () {
+
+}
+
+</script>
+
+</html>
+
+<!-- how will the game work?
+1. A user will click the click button. Each click raises the number.
+2. On a random click, the background will turn red.
+3. If the button is clicked on red, then the number resets.
+4. Highscore is shown on the right.
