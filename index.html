@@ -33,6 +33,13 @@ type="text/css">
     margin-top: 50px;
     font-family: Helvetica;
   }
+  #rnum {
+    display: block;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    margin-top: 50px;
+  }
 
 
   }
@@ -46,13 +53,31 @@ type="text/css">
 
 
 <script>
+// sets the variables
 var num = document.getElementById("num");
 var count = 0;
+var rand = 0;
 
+// adds 1 upon every click of the "click" button
 butt.onclick = function() {
-count += 1;
-num.innerHTML = count;
+  count += 1;
+  num.innerHTML = count;
+
+  //generates random number between 1-100
+  rand = Math.floor(Math.random()*100);
+
+  //changes background color based off random number (1/10th chance)
+  if (rand < 10) {
+    console.time()
+    document.documentElement.style.backgroundColor ="#cc0000";
+}   else {
+    document.documentElement.style.backgroundColor ="black";
+  }
 }
+
+
+
+
 
 </script>
 
