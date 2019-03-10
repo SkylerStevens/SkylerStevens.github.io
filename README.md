@@ -1,4 +1,3 @@
 # SkylerStevens.github.io
-n/a
-blah blah blah
 
+Here you can view all my coding projects in one place
